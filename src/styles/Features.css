@@ -1,0 +1,43 @@
+.features-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.features-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family:serif
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: serif;
+}
+
+.feature-card {
+  flex: 1 1 250px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

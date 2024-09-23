@@ -1,0 +1,29 @@
+.trust-container {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-card {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-number {
+    font-size: 36px;
+    color: #00bfa5;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: #333;
+  }
+  

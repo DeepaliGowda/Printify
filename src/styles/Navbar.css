@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #00bfa5;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-login,
+.navbar-signup {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navbar-login {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-login:hover {
+  background-color: white;
+  color: #333;
+}
+
+.navbar-signup {
+  background-color: #00bfa5;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.navbar-signup:hover {
+  background-color: #008f7a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default on mobile */
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+    cursor: pointer;
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: white;
+  }
+}
+
+/* Hide hamburger on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
